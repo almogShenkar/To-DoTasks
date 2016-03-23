@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.almog">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="JoXamp0gth1WFh3iNi0tKHnlPYL2p6I4kBGaa7xl" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="xQcyF9IryF5FxEiiJrgMQ370LK3aDYigj1z0GtdI" />
+        <activity
+            android:name="com.almog.Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.almog.SignUp" />
+        <activity android:name="com.almog.CreateAndInvite" />
+        <activity android:name="com.almog.CreateEditTask" />
+        <activity
+            android:name="com.almog.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.almog.ReportTask" />
+
+        <service android:name="com.almog.NotifyService" />
+
+    </application>
+
+</manifest>

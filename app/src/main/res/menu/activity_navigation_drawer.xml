@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Manage Team">
+        <group android:checkableBehavior="single">
+            <menu>
+                <item
+                    android:id="@+id/view_members"
+                    android:icon="@mipmap/ic_menu_manage"
+                    android:title="View members"
+                    />
+                <item
+                    android:id="@+id/nav_add"
+                    android:icon="@mipmap/add_member"
+                    android:title="Add member"
+                    />
+            </menu>
+        </group>
+    </item>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@mipmap/arrow"
+        android:title="Logout" />
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Settings"
+        />
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@mipmap/web"
+        android:title="About" />
+
+</menu>
+
+
